@@ -70,6 +70,8 @@ PODS:
   - glog (0.3.5)
   - libevent (2.1.12)
   - OpenSSL-Universal (1.1.1100)
+  - PurchasesHybridCommon (9.3.0):
+    - RevenueCat (= 4.33.0)
   - RCT-Folly (2022.05.16.00):
     - boost
     - DoubleConversion
@@ -1076,6 +1078,10 @@ PODS:
     - React-jsi (= 0.73.3)
     - React-logger (= 0.73.3)
     - React-perflogger (= 0.73.3)
+  - RevenueCat (4.33.0)
+  - RNPurchases (7.18.0):
+    - PurchasesHybridCommon (= 9.3.0)
+    - React-Core
   - RNScreens (3.29.0):
     - glog
     - RCT-Folly (= 2022.05.16.00)
@@ -1155,6 +1161,7 @@ DEPENDENCIES:
   - React-runtimescheduler (from `../node_modules/react-native/ReactCommon/react/renderer/runtimescheduler`)
   - React-utils (from `../node_modules/react-native/ReactCommon/react/utils`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - RNPurchases (from `../node_modules/react-native-purchases`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -1172,6 +1179,8 @@ SPEC REPOS:
     - fmt
     - libevent
     - OpenSSL-Universal
+    - PurchasesHybridCommon
+    - RevenueCat
     - SocketRocket
 
 EXTERNAL SOURCES:
@@ -1269,6 +1278,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/react/utils"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNPurchases:
+    :path: "../node_modules/react-native-purchases"
   RNScreens:
     :path: "../node_modules/react-native-screens"
   Yoga:
@@ -1292,6 +1303,7 @@ SPEC CHECKSUMS:
   glog: c5d68082e772fa1c511173d6b30a9de2c05a69a2
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
+  PurchasesHybridCommon: 809461dbc8ff23b4dd0d5260c005b4017d6205b6
   RCT-Folly: 7169b2b1c44399c76a47b5deaaba715eeeb476c0
   RCTRequired: 9b898847f76977a6dfed2a08f4c5ed37add75ec0
   RCTTypeSafety: 0debdc4ba38c8138016d8d8ada4bdf9ec1b8aa82
@@ -1334,10 +1346,12 @@ SPEC CHECKSUMS:
   React-runtimescheduler: f5befdb9af0c5d0eb0dbea22eced6ae9846281ee
   React-utils: b22b4a51aa578b3aac1e7c19501c0b9ba358ed79
   ReactCommon: aaf57f04ba14fa95cb0b941ee5c0d9d0f595c058
+  RevenueCat: 1512a074bebd78b7efb341ce1c33bfc8d292c53a
+  RNPurchases: d99acfb4a73763f3256a329dfa865b60d926e533
   RNScreens: b582cb834dc4133307562e930e8fa914b8c04ef2
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: 08cd7601462818c4985bda7b205b9e6a92a7e66a
 
 PODFILE CHECKSUM: ceeca1ad6d3cd194fb1fbfa110c8e2ba548fa5ab
 
-COCOAPODS: 1.15.0
+COCOAPODS: 1.14.3
